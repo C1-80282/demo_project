@@ -1,5 +1,5 @@
 resource "aws_s3_object" "index"{
-	bucket = "ditiss-project-hosting-website"
+	bucket = "c1-80282-9"
 	key = "index.html"
 	source = "index.html"
 	acl = "private"
@@ -8,7 +8,7 @@ resource "aws_s3_object" "index"{
 }
 
 resource "aws_s3_object" "error" {
-	bucket = "ditiss-project-hosting-website"
+	bucket = "c1-80282-9"
 	key = "error.html"
 	source = "error.html"
 	acl = "private"
@@ -16,7 +16,7 @@ resource "aws_s3_object" "error" {
 }
 
 resource "aws_s3_object" "style" {
-	bucket = "ditiss-project-hosting-website"
+	bucket = "c1-80282-9"
 	key = "style.css"
 	source = "style.css"
 	acl = "private"
@@ -25,7 +25,7 @@ resource "aws_s3_object" "style" {
 
 
 resource "aws_s3_object" "script" {
-	bucket = "ditiss-project-hosting-website"
+	bucket = "c1-80282-9"
 	key = "script.js"
 	source = "script.js"
 	acl = "private"
@@ -33,7 +33,7 @@ resource "aws_s3_object" "script" {
 }
 
 resource "aws_s3_bucket_website_configuration" "website" {
-	bucket = "ditiss-project-hosting-website"
+	bucket = "c1-80282-9"
 	index_document {
 		suffix = "index.html"
 		}
